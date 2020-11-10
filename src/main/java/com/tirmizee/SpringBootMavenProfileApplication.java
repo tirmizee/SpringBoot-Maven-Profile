@@ -8,6 +8,6 @@ public class SpringBootMavenProfileApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootMavenProfileApplication.class, args);
-	}
+	} 
 
 }
