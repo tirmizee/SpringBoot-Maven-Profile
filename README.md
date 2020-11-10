@@ -16,7 +16,7 @@
       <profile>
         <id>sit</id>
         <activation>
-          <activeByDefault>true</activeByDefault>
+          <activeByDefault>false</activeByDefault>
         </activation>
       </profile>
 
