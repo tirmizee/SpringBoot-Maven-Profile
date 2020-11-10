@@ -122,10 +122,30 @@
   ```properties
 
 	spring.profiles.active=dev
+	
   ```  
 
   - ##### application-dev.properties
-  - ##### application-sit.properties  
+  
+  ```properties
+
+	server.port=8000 
+
+	java.version=${java.version}
+	test-pom-property=${test-pom-property}
+	
+  ```  
+
+  - ##### application-sit.properties
+  
+  ```properties
+
+	server.port=8000 
+
+	java.version=${java.version}
+	test-pom-property=${test-pom-property}
+	
+  ```  
 
 #### Using profiles
 
