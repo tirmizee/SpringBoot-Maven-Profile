@@ -1,6 +1,6 @@
 # SpringBoot-Maven-Profile 
 
-#### Profile syntag
+#### Declaring Profiles
 
 <b>
 
