@@ -117,7 +117,15 @@
 
 #### Properties file
 
-  - ##### dsd
+  - ##### application.properties
+  
+  ```properties
+
+	spring.profiles.active=dev
+  ```  
+
+  - ##### application-dev.properties
+  - ##### application-sit.properties  
 
 #### Using profiles
 
