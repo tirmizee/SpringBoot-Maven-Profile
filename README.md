@@ -37,6 +37,8 @@
 ```xml
 
 <profiles>
+   
+   <!-- dev profile -->	
    <profile>
       <id>dev</id>
       <activation>
@@ -73,10 +75,12 @@
 	 </dependency>
       </dependencies>
    </profile>
+	
+   <!-- sit profile -->		
    <profile>
-      <id>dev</id>
+      <id>sit</id>
       <activation>
-	 <activeByDefault>true</activeByDefault>
+	 <activeByDefault>false</activeByDefault>
       </activation>
       <properties>
 	 <java.version>1.8</java.version>
@@ -104,6 +108,7 @@
 	 </dependency>
       </dependencies>
    </profile>
+	
 </profiles>
 
 ```
