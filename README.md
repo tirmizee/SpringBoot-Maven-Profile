@@ -147,7 +147,7 @@
 	
   ```  
 
-#### Using profiles
+#### Using maven profiles with Eclipse
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/15135199/98629530-a9030980-234b-11eb-82cd-a736764393a3.JPG" width="600">
