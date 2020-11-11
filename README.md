@@ -150,15 +150,7 @@
 
   - ##### application-dev.properties
   
-  ```properties
-
-	server.port=8000 
-
-	pom.description=@project.description@
-	pom.test=@test.pom@
-  ```  
-
-  - ##### application-sit.properties
+  <b>
   
   ```properties
 
@@ -167,6 +159,22 @@
 	pom.description=@project.description@
 	pom.test=@test.pom@
   ```  
+
+</b>
+
+  - ##### application-sit.properties
+  
+  <b>
+  
+  ```properties
+
+	server.port=8000 
+
+	pom.description=@project.description@
+	pom.test=@test.pom@
+  ```  
+
+</b>
 
 #### Using maven profiles with Eclipse
 
