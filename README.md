@@ -138,12 +138,15 @@
 #### Properties file
 
   - ##### application.properties
+
+<b>
   
   ```properties
 
 	spring.profiles.active=dev
-	
   ```  
+
+</b>
 
   - ##### application-dev.properties
   
