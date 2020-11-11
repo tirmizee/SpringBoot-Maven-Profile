@@ -1,5 +1,26 @@
 # SpringBoot-Maven-Profile 
 
+#### Add plugin
+
+<b>
+
+```xml
+
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-resources-plugin</artifactId>
+    <configuration>
+	<delimiters>
+	    <delimiter>@</delimiter>
+	</delimiters>
+	<useDefaultDelimiters>false</useDefaultDelimiters>
+    </configuration>
+</plugin>
+      
+```
+
+</b>
+
 #### Declaring Profiles
 
 <b>
