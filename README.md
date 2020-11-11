@@ -151,9 +151,8 @@
 
 	server.port=8000 
 
-	java.version=${java.version}
-	test-pom-property=${test-pom-property}
-	
+	pom.description=@project.description@
+	pom.test=@test.pom@
   ```  
 
   - ##### application-sit.properties
@@ -162,9 +161,8 @@
 
 	server.port=8000 
 
-	java.version=${java.version}
-	test-pom-property=${test-pom-property}
-	
+	pom.description=@project.description@
+	pom.test=@test.pom@
   ```  
 
 #### Using maven profiles with Eclipse
