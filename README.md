@@ -49,7 +49,7 @@
 </b>
 
 
-#### Profiles in pom.xml file
+#### pom.xml 
 
 
 <b>
