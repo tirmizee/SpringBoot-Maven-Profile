@@ -16,7 +16,6 @@
 	<useDefaultDelimiters>false</useDefaultDelimiters>
     </configuration>
 </plugin>
-      
 ```
 
 </b>
