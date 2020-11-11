@@ -176,6 +176,40 @@
 
 </b>
 
+#### 
+
+<b>
+
+```java
+
+@SpringBootApplication
+public class SpringBootMavenProfileApplication implements CommandLineRunner {
+	
+	@Autowired 
+	ApplicationContext context;
+	
+	@Value("${pom.description}") 	
+	private String description;
+	
+	@Value("${pom.test}") 	
+	private String test;
+	
+	
+	public static void main(String[] args) {
+		SpringApplication.run(SpringBootMavenProfileApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		System.out.println(test);
+		System.out.println(description);
+	} 
+
+}
+```
+
+</b>
+
 #### Using maven profiles with Eclipse
 
 <p align="center">
