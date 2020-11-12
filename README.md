@@ -1,5 +1,25 @@
 # SpringBoot-Maven-Profile 
 
+#### Add plugin
+
+<b>
+
+```xml
+
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-resources-plugin</artifactId>
+    <configuration>
+	<delimiters>
+	    <delimiter>@</delimiter>
+	</delimiters>
+	<useDefaultDelimiters>false</useDefaultDelimiters>
+    </configuration>
+</plugin>
+```
+
+</b>
+
 #### Declaring Profiles
 
 <b>
@@ -29,7 +49,7 @@
 </b>
 
 
-#### Profiles in pom.xml file
+#### pom.xml 
 
 
 <b>
@@ -118,34 +138,77 @@
 #### Properties file
 
   - ##### application.properties
+
+<b>
   
   ```properties
 
 	spring.profiles.active=dev
-	
   ```  
+
+</b>
 
   - ##### application-dev.properties
   
-  ```properties
-
-	server.port=8000 
-
-	java.version=${java.version}
-	test-pom-property=${test-pom-property}
-	
-  ```  
-
-  - ##### application-sit.properties
+  <b>
   
   ```properties
 
 	server.port=8000 
 
-	java.version=${java.version}
-	test-pom-property=${test-pom-property}
-	
+	pom.description=@project.description@
+	pom.test=@test.pom@
   ```  
+
+</b>
+
+  - ##### application-sit.properties
+  
+  <b>
+  
+  ```properties
+
+	server.port=8000 
+
+	pom.description=@project.description@
+	pom.test=@test.pom@
+  ```  
+
+</b>
+
+#### testing with java
+
+<b>
+
+```java
+
+@SpringBootApplication
+public class SpringBootMavenProfileApplication implements CommandLineRunner {
+	
+	@Autowired 
+	ApplicationContext context;
+	
+	@Value("${pom.description}") 	
+	private String description;
+	
+	@Value("${pom.test}") 	
+	private String test;
+	
+	
+	public static void main(String[] args) {
+		SpringApplication.run(SpringBootMavenProfileApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		System.out.println(test);
+		System.out.println(description);
+	} 
+
+}
+```
+
+</b>
 
 #### Using maven profiles with Eclipse
 
